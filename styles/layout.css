@@ -1,0 +1,266 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #bdc3c7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: #273c75;
+    min-height: 35rem;
+    height: 100%;
+}
+
+aside figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    box-shadow: 3px 5px 5px #3498db;
+}
+
+aside h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+aside p {
+    text-align: justify;
+    text-indent: 1.5rem;
+    line-height: 1.375rem;
+    padding-bottom: 0.7rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+aside nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    padding: 0.6rem 5rem;
+}
+
+nav ul li:hover,
+nav ul .active {
+    background-color: #2ecc71;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul li:hover a,
+nav ul .active a {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f39c12;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+
+li a:active {
+    color: #088C19;
+}
+
+/* main */
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+    min-height: 35rem;
+    height: 95vh;
+}
+
+main h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-top: 3rem;
+    color: #273c75;
+}
+
+main h2::after {
+    content: '';
+    display: block;
+    width: 11.6rem;
+    height: 0.22rem;
+    background-color: #f39c12;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 0.15rem;
+}
+
+main .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.1rem;
+    padding: 0 2rem 16rem 2rem;
+    width: 93%;
+}
+
+main .content .lists {
+    background-color: #ffffff;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* min-height: 29rem; */
+}
+
+.left-list {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 3px 5px 5px #3498db;
+}
+
+.rigth-list {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 5px 5px #3498db;
+}
+
+.lists h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.lists .lists-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+    margin-top: 3rem;
+}
+
+.lists-title .to-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+
+.to-add input {
+    height: 1.5rem;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    border: none;
+}
+
+.button-add {
+    border-radius: 5px;
+    height: 1.5rem;
+}
+
+.button-add:hover {
+    background-color: #2ecc71;
+    height: 1.6rem;
+}
+
+.lists .box {
+    width: 70%;
+    font-size: 16px;
+}
+
+.lists ol {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+.lists ol li {
+    list-style-type: decimal;
+    text-align: left;
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1rem;
+}
+
+.credits a {
+    color: #273c75;
+    font-weight: bold;
+}
+
+.credits a:hover {
+    color: #2ecc70;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+
+    body, 
+    aside,
+    main .content,
+    .lists .lists-title {
+        flex-direction: column;
+    }
+
+    body,
+    main,
+    aside {
+        width: 100%;
+    }
+
+    aside {
+        padding: 0;
+        min-height: unset;
+    }
+    
+    figure {
+        width: 85%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    main .content {
+        padding: 0;
+    }
+
+    .lists .lists-title {
+        gap: 1rem;
+    }
+}

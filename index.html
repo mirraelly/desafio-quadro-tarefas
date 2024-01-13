@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <script src="./scripts/tarefas.js" defer></script>
+    <title>Quadro de Tarefas</title>
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <img src="./assets/user.png" alt="Imagem neutra de representação de usuário">
+            <h1>Nome genérico</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis orci id metus ullamcorper, in
+                facilisis ante consectetur. Pellentesque venenatis elementum turpis, sed aliquet ipsum pellentesque at.
+                Suspendisse quis lorem orci. Nunc malesuada mollis nisl, in eleifend ante dapibus at.</p>
+        </figure>
+        <nav>
+            <ul>
+                <li class="active"><a href="#" target="_blank">🏠 Link1</a></li>
+                <li><a href="#" target="_blank">💰 Link2</a></li>
+                <li><a href="#" target="_blank">⚙️ Link3</a></li>
+                <li><a href="#" target="_blank">📁 Link4</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h2>Lista de Tarefas</h2>
+        <section class="content">
+            <article class="lists left-list">
+                <div class="lists-title">
+                    <h3>Dia 🌤️</h3>
+                    <form class="to-add form-day">
+                        <input type="text" placeholder="Nova tarefa..." class="new-task-day" required>
+                        <button class="button-add button-add-day" type="submit">➕</button>
+                    </form>
+                </div>
+                <div class="box">
+                    <ol class="task-day">
+                        <!-- <li>Lorem ipsum dolor sit amet <a href="#" class="delete-task">❌</a></li>-->
+                    </ol>
+                </div>
+            </article>
+            <article class="lists rigth-list">
+                <div class="lists-title">
+                    <h3>Noite🌛</h3>
+                    <form class="to-add form-night">
+                        <input type="text" placeholder="Nova tarefa..." class="new-task-night" required>
+                        <button class="button-add button-add-tonight" type="submit">➕</button>
+                    </form>
+                </div>
+                <div class="box">
+                    <ol class="task-night">
+                        <!-- <li>Lorem ipsum dolor sit amet <a href="#" class="delete-task">❌</a></li> -->
+                    </ol>
+                </div>
+            </article>
+        </section>
+        <section class="credits">
+            <p class="copy">© Desenvolvido por <a target="_blank"
+                    href="https://mirraelly.github.io/Challenge-Oracle-ONE-Portfolio/">Mirraely</a></p>
+            <p>2024</p>
+        </section>
+    </main>
+</body>
+
+</html>
